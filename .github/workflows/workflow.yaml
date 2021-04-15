@@ -1,0 +1,15 @@
+name: "workflow run webhook"
+
+on:
+  workflow_run:
+    workflows: ["first"]
+    types: 
+      - requested
+      - completed
+
+jobs:
+  job:
+    name: Handle workflow_run webhook
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{ toJson(github.event) }}"
