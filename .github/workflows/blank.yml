@@ -24,7 +24,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
-          echo ${ github.actor }
+          echo ${{ github.actor }}
 
   # This workflow contains a single job called "build"
   Not-yikun-job:
@@ -41,4 +41,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
-          echo ${ github.actor }
+          echo ${{ github.actor }}
