@@ -3,7 +3,7 @@ name: "workflow run 2nd workflow"
 
 on:
   workflow_run:
-    workflows: ["first"]
+    workflows: ["push"]
     types: 
       - requested
       - completed
